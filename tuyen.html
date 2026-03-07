@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Trần Quang Tuyến</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+        .card { background: white; width: 100%; max-width: 450px; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.2); text-align: center; transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-10px); }
+        .header { background: #f8f9fa; padding: 40px 20px; position: relative; }
+        .avatar { width: 150px; height: 150px; border-radius: 50%; border: 5px solid #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.1); object-fit: cover; margin-bottom: 15px; }
+        .name { font-size: 24px; color: #333; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
+        .title { color: #667eea; font-weight: 600; font-size: 16px; margin-bottom: 20px; }
+        .info-container { padding: 30px; text-align: left; }
+        .info-item { display: flex; align-items: center; margin-bottom: 15px; color: #555; font-size: 15px; }
+        .info-item i { width: 35px; height: 35px; background: #f0f2f5; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; color: #764ba2; }
+        .social-links { padding: 20px; border-top: 1px solid #eee; display: flex; justify-content: center; gap: 20px; }
+        .social-links a { color: #764ba2; font-size: 20px; transition: 0.3s; }
+        .social-links a:hover { color: #667eea; }
+        .btn-contact { display: block; background: #764ba2; color: white; text-decoration: none; padding: 12px; margin: 0 30px 30px; border-radius: 25px; font-weight: bold; transition: 0.3s; }
+        .btn-contact:hover { background: #667eea; box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4); }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header">
+            <!-- Thay link ảnh avatar của bạn vào đây -->
+            <img src="images (1).jpg" alt="Avatar" class="avatar">
+            <h1 class="name">trần Quang TUyến</h1>
+            <p class="title">Sinh viên Đại học Lạc Hồng</p>
+        </div>
+
+        <div class="info-container">
+            <div class="info-item">
+                <i class="fas fa-birthday-cake"></i>
+                <span><strong>Tuổi:</strong>23</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-university"></i>
+                <span><strong>Trường:</strong> Đại học Lạc Hồng (LHU)</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span><strong>Địa chỉ:</strong> Biên Hòa, Đồng Nai</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <span><strong>SĐT:</strong> 0123.456.789</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <span><strong>Email:</strong> tranquangtuyen@gmail.com</span>
+            </div>
+        </div>
+
+        <a href="mailto:tuyen.tran@gmail.com" class="btn-contact">Liên Hệ Với Tôi</a>
+
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+
+</body>
+</html>
