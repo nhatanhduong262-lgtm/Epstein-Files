@@ -1,0 +1,145 @@
+  body {
+      background: #0789fa;
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  .cv-container {
+      background: #fff;
+      width: 700px;
+      margin: 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      overflow: hidden;
+      position: relative;
+  }
+
+  .cv-header {
+      background: #3d4b3f;
+      color: #fff;
+      padding: 32px 32px 24px 32px;
+      position: relative;
+  }
+
+  .cv-header h1 {
+      margin: 0;
+      font-size: 2.2em;
+      letter-spacing: 2px;
+      font-weight: 700;
+  }
+
+  .cv-header h2 {
+      margin: 8px 0 0 0;
+      font-size: 1.1em;
+      font-weight: 400;
+      letter-spacing: 1px;
+  }
+
+  .avatar {
+      position: absolute;
+      top: 32px;
+      right: 32px;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      object-fit: cover;
+      background: #eee;
+  }
+
+  .cv-content {
+      display: flex;
+      padding: 32px;
+      gap: 32px;
+  }
+
+  .cv-left,
+  .cv-right {
+      flex: 1;
+  }
+
+  .cv-section {
+      margin-bottom: 28px;
+  }
+
+  .cv-section-title {
+      color: #3d4b3f;
+      font-weight: 700;
+      font-size: 1.1em;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+      position: relative;
+      display: inline-block;
+  }
+
+  .cv-section-title::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: #ff6f3c;
+      margin-top: 4px;
+      border-radius: 2px;
+  }
+
+  .cv-info {
+      font-size: 0.98em;
+      line-height: 1.7;
+      color: #333;
+  }
+
+  .cv-list {
+      margin: 0;
+      padding-left: 18px;
+  }
+
+  .cv-list li {
+      margin-bottom: 6px;
+  }
+
+  .highlight {
+      color: #ff6f3c;
+      font-weight: 700;
+  }
+
+  .cv-contact {
+      margin-bottom: 18px;
+      font-size: 0.98em;
+      color: #333;
+  }
+
+  .cv-contact span {
+      display: block;
+      margin-bottom: 3px;
+  }
+
+  .cv-footer {
+      background: #f3f3f3;
+      padding: 18px 32px;
+      font-size: 0.98em;
+      color: #555;
+      border-top: 1px solid #e0e0e0;
+  }
+
+  @media (max-width: 800px) {
+      .cv-container {
+          width: 98vw;
+      }
+
+      .cv-content {
+          flex-direction: column;
+          padding: 18px;
+          gap: 0;
+      }
+
+      .cv-header,
+      .cv-footer {
+          padding: 18px;
+      }
+
+      .avatar {
+          position: static;
+          display: block;
+          margin: 18px auto 0 auto;
+      }
+  }
