@@ -1,71 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
+<!-- 
+  ==================================================
+  CV ONLINE - CAO VĂN HỘT XOÀN
+  ==================================================
+  - Dự án CV trực tuyến với design hiện đại
+  - Có tuyết rơi, hiệu ứng hover, và responsive
+  - Sử dụng CSS3 animations và Flexbox layout
+  ==================================================
+-->
 <head>
-  <meta charset="UTF-8">
+  <!-- Cài đặt metadata cơ bản -->
+  <meta charset="UTF-8" />
   <title>CAO VĂN HỘT XOÀN - CV</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./CSS/CaoVanHotXoan.css">
+  
+  <!-- Import font Montserrat từ Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet" />
+  
+  <!-- Link file CSS chứa toàn bộ styling -->
+  <link rel="stylesheet" href="./CSS/xoan/CaoVanHotXoan.css" />
 </head>
+
 <body>
+  <!-- CONTAINER CHÍNH: Chứa toàn bộ nội dung CV -->
   <div class="cv-container">
+    
+    <!-- PHẦN HEADER: Tiêu đề, tên và ảnh đại diện -->
     <div class="cv-header">
-      <h1>CAO VĂN HỘT XOÀN</h1>
-      <h2>THÀNH VIÊN NHÓM (LẬP TRÌNH VIÊN)</h2>
+      <h1>CAO VĂN HỘT XOÀN</h1> <!-- Tên (sẽ có màu cam khi hover) -->
+      <h2>THÀNH VIÊN NHÓM (LẬP TRÌNH VIÊN)</h2> <!-- Chức danh -->
+      <img src="./Image/xoan/xoan.png" alt="Ảnh đại diện Cao Văn Hột Xoàn" class="cv-avatar" /> <!-- Ảnh đại diện tròn -->
     </div>
+
+    <!-- PHẦN NỘI DUNG CHÍNH: Tất cả các section thông tin -->
     <div class="cv-content">
+      
+      <!-- PHẦN TRÁI: Thông tin cá nhân, sở thích, học vấn, thông tin thêm -->
       <div class="cv-left">
-        <div class="cv-contact">...</div>
+        
+        <!-- SECTION: Thông tin cá nhân (Ngày sinh, Giới tính) -->
         <div class="cv-section">
-          <div class="cv-section-title">Mục tiêu nghề nghiệp</div>
-          <div class="cv-info">...</div>
+          <div class="cv-section-title">Thông tin cá nhân</div> <!-- Tiêu đề section có gạch cam dưới -->
+          <div class="cv-info"></div>
+          <p><span class="highlight">Ngày sinh:</span> 20/01/2005</p>
+          <p><span class="highlight">Giới tính:</span> Nam</p>
         </div>
-        <div class="cv-section">
-          <div class="cv-section-title">Kỹ năng</div>
-          <ul class="cv-list"><li>...</li></ul>
-        </div>
-        <div class="cv-section">
-          <div class="cv-section-title">Chứng chỉ</div>
-          <ul class="cv-list"><li>...</li></ul>
-        </div>
+
+        <!-- SECTION: Sở thích (Nghe Nhạc, Chơi Game, Đọc Sách) -->
         <div class="cv-section">
           <div class="cv-section-title">Sở thích</div>
-          <ul class="cv-list"><li>...</li></ul>
+          <ul class="cv-list">
+            <li>Nghe Nhạc</li>
+            <li>Chơi Game</li>
+            <li>Đọc Sách</li>
+          </ul>
         </div>
-        <div class="cv-section">
-          <div class="cv-section-title">Người tham chiếu</div>
-          <div class="cv-info">...</div>
-        </div>
-      </div>
-      <div class="cv-right">
+
+        <!-- SECTION: Học vấn (Trường đại học) -->
         <div class="cv-section">
           <div class="cv-section-title">Học vấn</div>
-          <div class="cv-info">...</div>
+          <div class="cv-info">Đại học Lạc Hồng University</div>
         </div>
-        <div class="cv-section">
-          <div class="cv-section-title">Kinh nghiệm</div>
-          <div class="cv-info">...</div>
-        </div>
-        <div class="cv-section">
-          <div class="cv-section-title">Giải thưởng</div>
-          <ul class="cv-list"><li>...</li></ul>
-        </div>
-        <div class="cv-section">
-          <div class="cv-section-title">Hoạt động</div>
-          <ul class="cv-list"><li>...</li></ul>
-        </div>
-        <div class="cv-section">
-          <div class="cv-section-title">Dự án tham gia</div>
-          <ul class="cv-list"><li>...</li></ul>
-        </div>
+
+        <!-- SECTION: Thông tin liên hệ (SĐT, Email, mạng xã hội) -->
         <div class="cv-section">
           <div class="cv-section-title">Thông tin thêm</div>
-          <div class="cv-info">...</div>
+          <div class="cv-info">SĐT: 08163 44 504</div>
+          <div class="cv-info">Email: sinhvienxoan@gmail.com</div>
+          <!-- YouTube link (tạm ẩn) -->
+          <!-- <div class="cv-info"><a href="https://www.youtube.com" target="_blank" class="cv-link">YouTube</a></div> -->
+          <!-- Facebook link (tạm ẩn) -->
+          <!-- <div class="cv-info"><a href="https://www.facebook.com" target="_blank" class="cv-link">Facebook</a></div> -->
         </div>
       </div>
+      <!-- HẾT PHẦN TRÁI -->
+
     </div>
-    <div class="cv-footer">
-      &copy; 2026 Cao Văn Hột Xoàn
+    <!-- HẾT NỘI DUNG CHÍNH -->
+
+  </div>
+  <!-- HẾT CONTAINER CHÍNH -->
+<div class="cv-info">Email: sinhvienxoan@gmail.com</div>
+        <!-- <div class="cv-info"><a href="https://www.youtube.com" target="_blank" class="cv-link">YouTube</a></div> -->
+        <!-- <div class="cv-info"><a href="https://www.facebook.com" target="_blank" class="cv-link">Facebook</a></div> -->
+      </div>
     </div>
+  </div>
   </div>
 </body>
 </html>

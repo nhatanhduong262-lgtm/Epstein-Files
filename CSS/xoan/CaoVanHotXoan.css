@@ -1,0 +1,215 @@
+/* ========================================
+   CV ONLINE - CAO VĂN HỘT XOÀN
+   ======================================== */
+
+/* ===== BODY & BACKGROUND ===== */
+body {
+  background-image: url("../../Image/xoan/anhnen.png"); /* Hình nền từ Image/xoan/anhnen.png */
+  background-size: cover; /* Phủ kín toàn màn hình */
+  background-position: center; /* Canh giữa hình nền */
+  background-attachment: fixed; /* Cố định khi scroll */
+  font-family: "Montserrat", Arial, sans-serif; /* Font chữ chính */
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== CONTAINER CHÍNH ===== */
+.cv-container {
+  background: #fff; /* Nền trắng */
+  width: 700px; /* Chiều rộng cố định */
+  margin: 60px auto; /* Canh giữa với lề trên/dưới 60px */
+  border-radius: 12px; /* Góc tròn */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12); /* Bóng nhẹ */
+  overflow: hidden; /* Ẩn content ngoài bo góc */
+  position: relative;
+}
+
+/* ===== HEADER ===== */
+.cv-header {
+  background: #3d4b3f; /* Màu xanh đậm */
+  color: #fff; /* Chữ trắng */
+  padding: 40px 40px 28px 40px; /* Padding: top, right, bottom, left */
+  position: relative;
+  margin-bottom: 8px;
+}
+
+/* Tiêu đề H1 (Tên) - Có hiệu ứng hover */
+.cv-header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  letter-spacing: 2px; /* Khoảng cách chữ */
+  font-weight: 700; /* Chữ đậm */
+  color: #ff6f3c; /* Màu cam */
+  transition: all 0.3s ease; /* Transition mượt */
+  cursor: pointer; /* Con trỏ thành dấu tay */
+}
+
+.cv-header h1:hover {
+  color: #ff3300; /* Đổi sang đỏ */
+  text-shadow: 0 4px 8px rgba(255, 111, 60, 0.3); /* Bóng chữ */
+  transform: scale(1.05); /* Phóng to 5% */
+}
+
+/* Tiêu đề H2 (Chức danh) */
+.cv-header h2 {
+  margin: 8px 0 0 0;
+  font-size: 1.1em;
+  font-weight: 400; /* Chữ bình thường */
+  letter-spacing: 1px;
+}
+
+/* ===== ẢNH ĐẠI DIỆN ===== */
+.cv-avatar {
+  position: absolute; /* Vị trí tuyệt đối trong header */
+  top: 32px; /* Cách trên 32px */
+  right: 32px; /* Cách phải 32px */
+  width: 120px; /* Kích thước 120x120px */
+  height: 120px;
+  border-radius: 50%; /* Tròn hoàn toàn */
+  border: 5px solid #fff; /* Viền trắng */
+  object-fit: cover; /* Cắt ảnh để vừa khung */
+  background: #eee; /* Nền khi ảnh chưa load */
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.2),
+    /* Bóng chính */ 0 0 0 2px #ff6f3c; /* Viền cam */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Animation mượt */
+}
+
+.cv-avatar:hover {
+  transform: scale(1.08); /* Phóng to 8% khi hover */
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.25),
+    /* Bóng lớn hơn */ 0 0 0 2px #ff6f3c;
+}
+
+/* ===== NỘI DUNG CHÍNH ===== */
+.cv-content {
+  display: flex;
+  flex-direction: column;
+  padding: 40px; /* Flexbox layout */
+  /* Sắp xếp dọc (không ngang) */
+}
+
+.cv-left {
+  flex: 1; /* Chia đều không gian */
+  /* ===== SECTION ===== */
+  .cv-section {
+    margin-bottom: 20px;
+  }
+  /* Khoảng cách dưới mỗi section */
+}
+
+.cv-section-title {
+  color: #3d4b3f; /* Màu xanh đậm */
+  font-weight: 700; /* Chữ đậm */
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease; /* Animation chữ */
+}
+
+.cv-section:hover .cv-section-title {
+  color: #ff3300; /* Chữ đỏ khi hover section */
+}
+
+.cv-section-title::after {
+  content: ""; /* Tạo phần tử giả */
+  display: block;
+  width: 40px; /* Chiều rộng gạch */
+  height: 3px; /* Độ dày */
+  background: #ff6f3c; /* Màu cam */
+  margin-top: 4px;
+  border-radius: 2px; /* Góc tròn */
+}
+/* ===== TEXT CONTENT ===== */
+.cv-info {
+  font-size: 0.98em;
+  line-height: 1.7;
+  color: #333;
+  margin: 0; /* Khoảng cách dòng */
+  color: #333; /* Chữ xám tối */
+  margin: 0;
+  padding: 0;
+}
+
+.cv-info p {
+  margin: 0;
+  padding: 6px 0; /* Khoảng cách giữa các đoạn */
+  font-size: 0.98em;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ===== LINKS ===== */
+.cv-link {
+  color: #ff6f3c; /* Màu cam */
+  text-decoration: none; /* Bỏ gạch chân */
+  font-weight: 600;
+  transition: all 0.3s ease; /* Animation mượt */
+  border-bottom: 2px solid #ff6f3c; /* Gạch dưới */
+  padding-bottom: 2px;
+}
+
+.cv-link:hover {
+  color: #fff; /* Chữ trắng */
+  background-color: #ff6f3c; /* Nền cam */
+  padding: 4px 8px; /* Padding khi hover */
+  border-radius: 4px; /* Góc tròn */
+}
+
+/* ===== LISTS ===== */
+.cv-list {
+  margin: 0;
+  padding-left: 18px; /* Thụt lề từ trái */
+}
+
+.cv-list li {
+  margin-bottom: 6px; /* Khoảng cách giữa mục */
+}
+
+/* ===== HIGHLIGHT TEXT ===== */
+.highlight {
+  color: #ff6f3c; /* Màu cam */
+  font-weight: 700; /* Chữ đậm */
+  /* ===== FOOTER ===== */
+  .cv-footer {
+    background: #f3f3f3; /* Nền xám nhạt */
+    padding: 20px 40px;
+    font-size: 0.9em;
+    color: #888; /* Chữ xám */
+    border-top: 1px solid #e0e0e0; /* Đường kẻ mỏng */
+    text-align: center; /* Canh giữa */
+  }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN (MOBILE)
+   ======================================== */
+
+@media (max-width: 800px) {
+  .cv-container {
+    width: 98vw; /* 98% chiều rộng màn hình */
+    margin: 40px auto;
+  }
+
+  .cv-content {
+    flex-direction: column; /* Ko thay đổi */
+    padding: 24px; /* Giảm padding trên mobile */
+    gap: 0;
+  }
+
+  .cv-header,
+  .cv-footer {
+    padding: 24px; /* Giảm padding */
+  }
+
+  .cv-avatar {
+    position: static; /* Vị trí bình thường */
+    display: block;
+    margin: 18px auto 0 auto; /* Canh giữa */
+  }
+}
